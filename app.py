@@ -25,10 +25,6 @@ def predict():
     temp=request.get_data(as_text=True)
     new=[temp]
     pred = model.predict(new)
-    if pred == 1:
-        return "SPAM"
-    else:
-        return "NOT SPAM"
     return str(pred)
     
 if __name__=="__main__":
