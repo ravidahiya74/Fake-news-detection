@@ -24,12 +24,11 @@ def main():
 def predict():
     temp=request.get_data(as_text=True)
     new=[temp]
-    message=pipeline.transform(new)
-    pred = pipeline.predict(message)
+    pred = model.predict(new)
     if pred == 1:
         return "SPAM"
     else:
-        return "HAM"
+        return "NOT SPAM"
     return str(pred)
     
 if __name__=="__main__":
