@@ -4,6 +4,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.pipeline import Pipeline
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import PassiveAggressiveClassifier
+from sklearn.naive_bayes import MultinomialNB
 from sklearn.feature_extraction.text import TfidfVectorizer
 import pickle
 
@@ -13,9 +14,9 @@ news['title_length'] = news['title'].apply(len)
 news['text_length'] = news['text'].apply(len)
 X = news['text']
 y = news['label']
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.33, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 pipeline = Pipeline([('tfidf', TfidfVectorizer(stop_words='english')),
-                    ('passiveaggressive', PassiveAggressiveClassifier(max_iter=50))])
+                    ('nbmodel', MultinomialNB())])
                     
 pipeline.fit(X_train, y_train)
 pred = pipeline.predict(X_test)

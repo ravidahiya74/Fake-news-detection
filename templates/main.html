@@ -18,8 +18,9 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="news" placeholder="Enter the news text" required="required" />
+    	<input type="text" name="news" placeholder="Enter the news url" required="required" />
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+
     </form>
 
    <br>
