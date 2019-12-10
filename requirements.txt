@@ -4,6 +4,5 @@ newspaper3k
 sklearn
 pandas
 flask
-urllib
 os
 gunicorn
