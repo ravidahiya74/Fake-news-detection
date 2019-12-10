@@ -7,7 +7,6 @@ import pickle
 import flask
 import os
 import newspaper
-import nltk
 from newspaper import fulltext
 from newspaper import Article
 import urllib
