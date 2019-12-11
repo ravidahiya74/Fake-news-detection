@@ -9,3 +9,6 @@ This project has four major parts :
 * fake_news_detection.py - This contains code fot our Machine Learning model to classify the model 
 * app.py - This contains Flask APIs that receives news url through GUI or API calls, extracts the article from the url, feeds it to the model and returns the prediction.
 * templates - This folder contains the HTML template to allow user to enter url and displays whether the news is fake or real.
+* static - This folder contains the CSS file.
+* requirements.txt - It contains the list of libraries required to run the heroku app
+
