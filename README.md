@@ -1,3 +1,4 @@
+# Checkout the app on this [link](https://ravi-finds-fake-news.herokuapp.com)
 # Introduction
 Do you trust all the news you hear from social media? All news are not real, right? So how will you detect the fake news? The answer is Python. By practicing this advanced python project of detecting fake news, you will easily make a difference between real and fake news. Before moving ahead in this advanced Python project, get aware of the terms related to it like fake news, tfidfvectorizer, Multinomial Naive Bayes.
 # Data
@@ -12,3 +13,14 @@ This project has four major parts :
 * static - This folder contains the CSS file.
 * requirements.txt - It contains the list of libraries required to run the heroku app
 
+# Running the project on local machine
+
+Ensure that you are in the project home directory. Create the machine learning model by running below command -
+python fake_news_detection.py
+This would create a serialized version of our model into a file model.pkl
+
+Run app.py using below command to start Flask API
+python app.py
+By default, flask will run on port 5000.
+
+Navigate to URL http://127.0.0.1:5000 
