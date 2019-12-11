@@ -1,1 +1,6 @@
-all
+brown
+punkt
+maxent_treebank_pos_tagger
+movie_reviews
+wordnet
+stopwords
